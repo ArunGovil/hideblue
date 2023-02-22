@@ -1,0 +1,22 @@
+{
+  "name": "HideBlue",
+  "version": "1.0.0",
+  "description": "Chrome Extension to hide Twitter Blue from Sidebar!",
+  "manifest_version": 3,
+  "author": "Arun Govil",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Hide Twitter Blue"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://mobile.twitter.com/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "icons": {
+    "16": "./assets/hide-16.png",
+    "48": "./assets/hide-48.png",
+    "128": "./assets/hide-128.png"
+  }
+}
