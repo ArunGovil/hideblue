@@ -5,7 +5,6 @@ async function hideBlue() {
 
 async function waitToMount() {
   const interval = await setInterval(() => {
-    console.log("running");
     const sidebar = document.querySelector(`[aria-label*="Primary"]`);
     if (sidebar) {
       clearInterval(interval);
